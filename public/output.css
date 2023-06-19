@@ -707,6 +707,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .font-roboto-bold {
   font-family: Roboto-Bold;
 }
