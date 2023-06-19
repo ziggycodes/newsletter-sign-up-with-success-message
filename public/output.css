@@ -534,32 +534,25 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.w-full {
-  width: 100%;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .w-screen {
   width: 100vw;
 }
 
-.min-w-full {
-  min-width: 100%;
-}
-
-.min-w-\[\] {
-  min-width: ;
-}
-
-.min-w-\[100\] {
-  min-width: 100;
-}
-
-.min-w-\[100vw\] {
-  min-width: 100vw;
+.max-w-screen-md {
+  max-width: 768px;
 }
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .font-roboto-bold {
@@ -570,9 +563,14 @@ video {
   font-family: Roboto-Regular;
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .filter {
