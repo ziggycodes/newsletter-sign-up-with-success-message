@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Success</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../src/input.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+      </style>
+</head>
+<body class="font-roboto-regular">
+    <div class="px-10 py-12 sm:py-4">
+        <div class="">
+            <div class="my-24">
+                <img src="../assets/images/icon-success.svg" alt="">
+                <h1 class="my-10 text-4xl font-roboto-bold">Thanks for <br>subscribing!</h1>
+                <p class="sm:w-96">
+                     A confirmation email has been sent to ash@loremcompany.com. 
+                    Please open it and click the button inside to confirm your subscription.
+                </p>
+            </div>
+        </div>
+        <div>
+            <button class="bg-[#36384E] hover:cursor-pointer hover:bg-gradient-to-r from-[#FF5257] to-[#f05f25] text-white block rounded-lg p-2 h-10 w-full sm:w-96 my-4">
+                
+                Dismiss message
+            </button>
+        </div>
+    </div>
+
+    <div class="mt-4 attribution text-center">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Isaac Ayodele</a>.
+    </div>
+
+    <script src="../src/success.js"></script>
+</body>
+</html>

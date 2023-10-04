@@ -15,156 +15,69 @@
   </style>
   <link rel="stylesheet" href="./public/output.css">
 </head>
-<body class="font-roboto-regular text-lg">
-  <div class="md:hidden">
-    <div class="w-screen">
-      <img class="object-fill w-full" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+<body class="font-roboto-regular sm:p-4">
 
+  <div class="grid grid-cols-3">
+    <div class="col-start-1 col-end-4 sm:hidden"><!--mobile logo-->
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up-mobile-img" class="w-full">
     </div>
 
-
-   <div class=" md:col-start-1 md:col-end-2"> <!--div that holds other content apart from main image. Makes easier to manipulate with grid-->
-      <div class="p-12">
-        <div>
+      <div class="hidden sm:grid sm:col-start-3 sm:col-end-4 sm:row-start-1"><!--desktop logo-->
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up-desktop-img" class="">
         
-          <h1 class="font-roboto-bold text-3xl my-6">Stay updated!</h1>
-      
-          <p class="text-sm">Join 60,000+ product managers receiving monthly updates on:</p>
-
-          <ul class="text-sm py-4">
-            
-            <div class="h-6 my-2">
-              <svg class="bg-[#FF5257] rounded-full w-6 h-6 inline mr-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
-            
-            <li class="inline">
-              Product discovery and building what matters
-            </li>
-            </div>
-            
-
-            <div class="h-6 my-2">
-              <svg class="bg-[#FF5257] rounded-full w-6 h-6 inline mr-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
-
-            <li class="inline">
-              Measuring to ensure updates are a success
-            </li>
-            </div>
-            
-            
-            
-            <div class="h-6 my-2">
-              <svg class="bg-[#FF5257] rounded-full w-6 h-6 inline mr-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
-
-              <li class="inline">
-                And much more!
-              </li>
-            </div>
-            
-            
-          </ul>
-          
-        </div>
-
-        <!-- Sign-up form start -->
-        <div>
-          <h3 class="font-roboto-bold">Email address</h3>
-
-          <input class="border-2 rounded-lg border-[#9294A0] my-2 px-2 py-2 h-10 w-full" type="email" name="mail" id="mail" placeholder="email@company.com">
-
-          <button class="bg-[#36384E] text-white block rounded-lg my-2 px-2 py-2 h-10 w-full" type="submit">Subscribe to monthly newsletter</button>
-        </div>
-
       </div>
+    
 
-      <!-- Sign-up form end -->
+    <div class="p-12 col-start-1 col-end-4 sm:row-start-1 sm:mt-12"> <!--Update-->
+      <h2 class="font-roboto-bold text-4xl">Stay updated!</h2>
+      <h3 class=" mt-2">
+        Join 60,000+ product managers receiving updates on:
+      </h3>
+
+      <ul class="my-4">
+        <li>
+          <img src="./assets/images/icon-success.svg" alt="icon-success" class="w-5 mr-1 my-2 inline"> Product discovery and building what matters
+        </li>
+
+        <li>
+          <img src="./assets/images/icon-success.svg" alt="icon-success" class="w-5 mr-1 my-2 inline"> Measuring to ensure updates are a success
+        </li>
+
+        <li>
+          <img src="./assets/images/icon-success.svg" alt="icon-success" class="w-5 mr-1 my-2 inline"> And much more
+        </li>
+      </ul>
     </div>
 
+    <div class="col-start-1 col-end-4 sm:col-start-1 sm:col-end-2 sm:row-start-1 sm:mt-96 mx-12">
+      <div>
+          <form action="">
+            <div class="flex justify-between">
+              <label class="hover:cursor-pointer text-left text-sm font-roboto-bold" for="email">Email address</label>
+              <span class="text-right text-xs text-red-500 hidden test">Valid email required</span>
+              </div>
+            <br>
+            <input id="email" placeholder="email@company.com" class="hover:cursor-pointer border-2 border-[#9294A0] rounded-lg h-10 p-2 w-full my-4" type="email">
+          </form>
+        <button class="bg-[#36384E] hover:cursor-pointer hover:bg-gradient-to-r from-[#FF5257] to-[#f05f25] text-white block rounded-lg p-2 h-10 w-full my-4">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+    </div>
   </div>
 
 
-  <!--Desktop section....hate doing this seperately...kinda defeats the purpose of the tailwind breakpoints.-->
-  <div class="hidden md:grid md grid-cols-3">
-    <div class="md:col-start-3 md:col-end-3 md:row-start-1 md:row-end-4">
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
-    </div>
+ 
 
-    <div class=" md:col-start-1 md:col-end-2"> <!--div that holds other content apart from main image. Makes easier to manipulate with grid-->
-      <div class="p-12">
-        <div>
-        
-          <h1 class="font-roboto-bold text-5xl my-6">Stay updated!</h1>
-      
-          <p class="text-lg">Join 60,000+ product managers receiving monthly updates on:</p>
+ 
 
-          <ul class="text-sm py-4">
-            
-            <div class="h-6 my-2">
-              <svg class="bg-[#FF5257] rounded-full w-6 h-6 inline mr-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
-            
-            <li class="inline">
-              Product discovery and building what matters
-            </li>
-            </div>
-            
-
-            <div class="h-6 my-2">
-              <svg class="bg-[#FF5257] rounded-full w-6 h-6 inline mr-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
-
-            <li class="inline">
-              Measuring to ensure updates are a success
-            </li>
-            </div>
-            
-            
-            
-            <div class="h-6 my-2">
-              <svg class="bg-[#FF5257] rounded-full w-6 h-6 inline mr-2" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
-
-              <li class="inline">
-                And much more!
-              </li>
-            </div>
-            
-            
-          </ul>
-          
-        </div>
-
-        <!-- Sign-up form start -->
-        <div class="mt-24">
-          <h3 class="font-roboto-bold">Email address</h3>
-
-          <input class="border-2 rounded-lg border-[#9294A0] my-2 px-2 py-2 h-10 w-full" type="email" name="mail" id="mail" placeholder="email@company.com">
-
-          <button class="bg-[#36384E] text-white block rounded-lg my-2 px-2 py-2 h-10 w-full" type="submit">Subscribe to monthly newsletter</button>
-        </div>
-
-      </div>
-
-      <!-- Sign-up form end -->
-   </div>
-  </div>
-
-  <div class="attribution text-center">
+  <div class="mt-4 attribution text-center">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Isaac Ayodele</a>.
   </div>
 
-  <!-- Success message start
+ 
   
-    Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-   -->
-
-  
-
-  <!-- Success message end -->
-  
-  
+<script src="./src/newsletter.js"></script>
 </body>
 </html>
